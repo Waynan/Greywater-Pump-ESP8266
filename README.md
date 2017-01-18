@@ -10,11 +10,12 @@ The webpage is written in PHP and includes a simple password protection script. 
 The current state of the pump is updated on the site every 15 seconds.
 
 To-do:
-Local Push button interupt driven.
 
-Cleanup the code.
+-Local Push button interupt driven.
 
-Add level sensing and or flow sensing.
+-Cleanup the code.
+
+-Add level sensing and or flow sensing.
 
 Hardware used:
 
