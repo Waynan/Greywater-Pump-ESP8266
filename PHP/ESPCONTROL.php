@@ -3,14 +3,18 @@
 
 $light = $_GET['light'];
 if($light == "on") {
-  $file = fopen("light.json", "w") or die("can't open file");
-  fwrite($file, '{"light": "on"}');
-  fclose($file);
-} 
+  $jsonString = file_get_contents('light.json');
+  $data = json_decode($jsonString, true);
+  $data['light'] = "on";
+  $newJsonString = json_encode($data);
+  file_put_contents('light.json', $newJsonString);
+  } 
 else if ($light == "off") {
-  $file = fopen("light.json", "w") or die("can't open file");
-  fwrite($file, '{"light": "off"}');
-  fclose($file);
+  $jsonString = file_get_contents('light.json');
+  $data = json_decode($jsonString, true);
+  $data['light'] = "off";
+  $newJsonString = json_encode($data);
+  file_put_contents('light.json', $newJsonString);
 }
 ?>
 
