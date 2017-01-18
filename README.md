@@ -11,4 +11,9 @@ The current state of the pump is updated on the site every 15 seconds.
 
 To-do:
 Local Push button interupt driven.
+
 Cleanup the code.
+
+
+Hardware used:
+-nodemcu
