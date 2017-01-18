@@ -14,6 +14,8 @@ Local Push button interupt driven.
 
 Cleanup the code.
 
+Add level sensing and or flow sensing.
 
 Hardware used:
+
 -nodemcu
